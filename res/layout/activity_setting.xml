@@ -1,0 +1,14 @@
+
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+        <EditTextPreference
+            	android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+                android:key="PREF_EDITTEXT"
+                android:title="EditText title"
+                android:summary="EditText summary"
+                android:dialogTitle="EditText Dialog" />
+
+</PreferenceScreen>

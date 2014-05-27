@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SetActivity" >
+    
+    <RadioGroup
+        android:id="@+id/radioGp"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_marginRight="13dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:background="@drawable/one" 
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:background="@drawable/two" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:background="@drawable/three" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:background="@drawable/four" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:background="@drawable/five" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="64dp"
+        android:onClick="confirm"
+        android:text="Confirm" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/radioGp"
+        android:layout_marginRight="50dp"
+        android:onClick="exit"
+        android:text="Exit" />
+
+</RelativeLayout>
